@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Schematic of multiphase mixing between two parallel subchannels connected by a narrow gap">
+<title>Multiphase mixing through a narrow gap</title>
+<defs>
+  <marker id="an" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#003262"/></marker>
+  <marker id="ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#DE9A00"/></marker>
+  <marker id="as" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2E7CB0"/></marker>
+</defs>
+<rect width="800" height="500" fill="#E9F0F5"/>
+<g font-family="IBM Plex Mono, monospace" font-size="15" fill="#4C6379">
+
+  <!-- X-ray densitometry beam through the whole assembly -->
+  <text x="300" y="46" text-anchor="middle" fill="#12263C">X-ray densitometry</text>
+  <rect x="286" y="58" width="28" height="22" rx="3" fill="#003262"/>
+  <polygon points="300,80 245,432 355,432" fill="#2E7CB0" opacity="0.08"/>
+  <line x1="300" y1="80" x2="245" y2="432" stroke="#2E7CB0" stroke-width="1.2" stroke-dasharray="5 5" opacity="0.6"/>
+  <line x1="300" y1="80" x2="355" y2="432" stroke="#2E7CB0" stroke-width="1.2" stroke-dasharray="5 5" opacity="0.6"/>
+  <rect x="240" y="432" width="120" height="14" fill="#fff" stroke="#003262" stroke-width="1.6"/>
+  <g stroke="#003262" stroke-width="0.8" opacity="0.6">
+    <line x1="260" y1="432" x2="260" y2="446"/><line x1="280" y1="432" x2="280" y2="446"/>
+    <line x1="300" y1="432" x2="300" y2="446"/><line x1="320" y1="432" x2="320" y2="446"/>
+    <line x1="340" y1="432" x2="340" y2="446"/>
+  </g>
+  <text x="300" y="468" text-anchor="middle" font-size="13">detector array</text>
+
+  <!-- Wire-mesh sensor plane -->
+  <text x="655" y="46" text-anchor="middle" fill="#12263C">wire-mesh sensor</text>
+  <line x1="655" y1="58" x2="655" y2="426" stroke="#4C6379" stroke-width="1.6" stroke-dasharray="7 5"/>
+  <g stroke="#4C6379" stroke-width="1" opacity="0.75">
+    <line x1="645" y1="140" x2="665" y2="140"/><line x1="645" y1="180" x2="665" y2="180"/>
+    <line x1="645" y1="320" x2="665" y2="320"/><line x1="645" y1="360" x2="665" y2="360"/>
+  </g>
+
+  <!-- Subchannels and the connecting gap -->
+  <rect x="140" y="110" width="570" height="130" fill="#FFFFFF" stroke="#003262" stroke-width="2.5"/>
+  <rect x="140" y="240" width="570" height="46" fill="#E9F0F5" stroke="#2E7CB0" stroke-width="1.8" stroke-dasharray="6 4"/>
+  <rect x="140" y="286" width="570" height="130" fill="#FFFFFF" stroke="#003262" stroke-width="2.5"/>
+
+  <text x="152" y="132" font-size="14">subchannel A</text>
+  <text x="152" y="308" font-size="14">subchannel B</text>
+  <text x="130" y="268" text-anchor="end" fill="#12263C">narrow gap</text>
+
+  <!-- Unbalanced bulk flow: U_A > U_B -->
+  <line x1="168" y1="180" x2="630" y2="180" stroke="#003262" stroke-width="3" marker-end="url(#an)"/>
+  <text x="170" y="168" fill="#12263C">U<tspan font-size="11" dy="4">A</tspan></text>
+  <line x1="168" y1="356" x2="430" y2="356" stroke="#003262" stroke-width="3" marker-end="url(#an)"/>
+  <text x="170" y="344" fill="#12263C">U<tspan font-size="11" dy="4">B</tspan></text>
+
+  <!-- Coherent structures along the gap -->
+  <g fill="none" stroke="#2E7CB0" stroke-width="2">
+    <path d="M230,249 a14,14 0 1,1 -10,4" marker-end="url(#as)"/>
+    <path d="M350,277 a14,14 0 1,0 -10,-4" marker-end="url(#as)"/>
+    <path d="M470,249 a14,14 0 1,1 -10,4" marker-end="url(#as)"/>
+    <path d="M590,277 a14,14 0 1,0 -10,-4" marker-end="url(#as)"/>
+  </g>
+
+  <!-- Cross-gap exchange -->
+  <g stroke="#DE9A00" stroke-width="2">
+    <line x1="290" y1="292" x2="290" y2="236" marker-end="url(#ag)"/>
+    <line x1="410" y1="234" x2="410" y2="290" marker-end="url(#ag)"/>
+    <line x1="530" y1="292" x2="530" y2="236" marker-end="url(#ag)"/>
+  </g>
+
+  <!-- Dispersed phase, some crossing the gap -->
+  <g fill="#FDB515" fill-opacity="0.6" stroke="#003262" stroke-width="1.1">
+    <circle cx="180" cy="330" r="7"/><circle cx="222" cy="366" r="5"/><circle cx="262" cy="340" r="6"/>
+    <circle cx="318" cy="374" r="5"/><circle cx="358" cy="334" r="7"/><circle cx="404" cy="362" r="5"/>
+    <circle cx="452" cy="342" r="6"/><circle cx="500" cy="372" r="5"/><circle cx="548" cy="336" r="6"/>
+    <circle cx="596" cy="364" r="5"/><circle cx="640" cy="344" r="6"/>
+    <circle cx="290" cy="262" r="5"/><circle cx="530" cy="260" r="5"/>
+    <circle cx="290" cy="216" r="5"/><circle cx="530" cy="212" r="5"/>
+  </g>
+  <text x="710" y="126" text-anchor="end" font-size="13">dispersed gas phase</text>
+</g>
+</svg>

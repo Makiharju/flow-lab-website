@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" role="img" aria-label="Schematic of bubbly cross-flow over a circular cylinder showing vortex shedding and bubbles accumulating in vortex cores">
+<title>Bubble–vortex interaction in cross-flow over a cylinder</title>
+<defs>
+  <marker id="cn" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#003262"/></marker>
+  <marker id="cs" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2E7CB0"/></marker>
+  <marker id="cg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#DE9A00"/></marker>
+</defs>
+<rect width="800" height="480" fill="#E9F0F5"/>
+<g font-family="IBM Plex Mono, monospace" font-size="15" fill="#4C6379">
+
+  <!-- Incoming bubbly cross-flow -->
+  <text x="46" y="96" fill="#12263C">U∞ , void fraction α</text>
+  <g stroke="#003262" stroke-width="2.4">
+    <line x1="46" y1="140" x2="132" y2="140" marker-end="url(#cn)"/>
+    <line x1="46" y1="196" x2="132" y2="196" marker-end="url(#cn)"/>
+    <line x1="46" y1="252" x2="132" y2="252" marker-end="url(#cn)"/>
+    <line x1="46" y1="308" x2="132" y2="308" marker-end="url(#cn)"/>
+  </g>
+  <g fill="#FDB515" fill-opacity="0.6" stroke="#003262" stroke-width="1.1">
+    <circle cx="62" cy="166" r="5"/><circle cx="98" cy="224" r="6"/><circle cx="70" cy="284" r="5"/>
+    <circle cx="112" cy="122" r="5"/><circle cx="120" cy="278" r="6"/>
+  </g>
+
+  <!-- Cylinder -->
+  <circle cx="232" cy="224" r="56" fill="#FFFFFF" stroke="#003262" stroke-width="3"/>
+  <line x1="176" y1="224" x2="288" y2="224" stroke="#4C6379" stroke-width="1.2" stroke-dasharray="4 4"/>
+  <text x="232" y="216" text-anchor="middle" font-size="14" fill="#12263C">D</text>
+
+  <!-- Separation: single-phase vs bubbly (moves aft) -->
+  <circle cx="216" cy="170" r="5" fill="#003262"/>
+  <circle cx="216" cy="278" r="5" fill="#003262"/>
+  <circle cx="256" cy="172" r="5" fill="#DE9A00"/>
+  <circle cx="256" cy="276" r="5" fill="#DE9A00"/>
+  <path d="M262,124 q-4,18 -8,32" fill="none" stroke="#DE9A00" stroke-width="1.8" marker-end="url(#cg)"/>
+  <text x="252" y="96" font-size="13" fill="#12263C">separation moves aft</text>
+  <text x="252" y="113" font-size="12">with bubbles injected</text>
+
+  <!-- Separated shear layers -->
+  <path d="M216,170 C268,150 300,150 336,164" fill="none" stroke="#2E7CB0" stroke-width="2"/>
+  <path d="M216,278 C268,298 300,298 336,284" fill="none" stroke="#2E7CB0" stroke-width="2"/>
+
+  <!-- Von Karman street -->
+  <g fill="none" stroke="#2E7CB0" stroke-width="2.2">
+    <path d="M380,146 a26,26 0 1,1 -18,8" marker-end="url(#cs)"/>
+    <path d="M474,302 a26,26 0 1,0 -18,-8" marker-end="url(#cs)"/>
+    <path d="M568,146 a26,26 0 1,1 -18,8" marker-end="url(#cs)"/>
+    <path d="M662,302 a26,26 0 1,0 -18,-8" marker-end="url(#cs)"/>
+  </g>
+
+  <!-- Bubbles collect in the low-pressure cores -->
+  <g fill="#FDB515" fill-opacity="0.7" stroke="#003262" stroke-width="1.1">
+    <circle cx="360" cy="164" r="5"/><circle cx="372" cy="150" r="4"/><circle cx="352" cy="150" r="4"/><circle cx="364" cy="138" r="3.5"/>
+    <circle cx="454" cy="288" r="5"/><circle cx="466" cy="302" r="4"/><circle cx="446" cy="302" r="4"/><circle cx="458" cy="314" r="3.5"/>
+    <circle cx="548" cy="164" r="5"/><circle cx="560" cy="150" r="4"/><circle cx="540" cy="150" r="4"/>
+    <circle cx="642" cy="288" r="5"/><circle cx="654" cy="302" r="4"/><circle cx="634" cy="302" r="4"/>
+  </g>
+
+  <text x="628" y="96" text-anchor="middle" font-size="13" fill="#12263C">bubbles accumulate in vortex cores</text>
+  <line x1="600" y1="104" x2="562" y2="134" stroke="#4C6379" stroke-width="1"/>
+
+  <!-- Shedding frequency -->
+  <line x1="380" y1="366" x2="568" y2="366" stroke="#4C6379" stroke-width="1.4" marker-start="url(#cn)" marker-end="url(#cn)"/>
+  <text x="474" y="392" text-anchor="middle" font-size="14" fill="#12263C">shedding wavelength → f_s , St = f_s D / U∞</text>
+  <text x="474" y="414" text-anchor="middle" font-size="13">St shifts with void fraction</text>
+</g>
+</svg>

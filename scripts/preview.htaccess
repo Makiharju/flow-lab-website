@@ -1,0 +1,37 @@
+# ===========================================================================
+# PREVIEW SUBFOLDER CONFIG  (Apache servers only)
+# ---------------------------------------------------------------------------
+# Put this file inside the subfolder you created for testing (e.g. /preview),
+# then RENAME it to exactly ".htaccess" (with the leading dot, no .txt).
+#
+# It does two things:
+#   1. Stops the parent WordPress rewrite rules from hijacking these static
+#      files, so index.html and the other pages serve directly.
+#   2. Keeps the preview out of Google while you test.
+#
+# NOTE: this only works on Apache. If your server is nginx, an .htaccess file
+# is ignored and the equivalent has to be set in the server config by whoever
+# administers the box. If the preview URL 404s or redirects into WordPress and
+# this file made no difference, that's the likely reason — ask your admin, or
+# use the external-host route (Netlify / Cloudflare Pages) instead.
+# ===========================================================================
+
+# 1) Serve the static files directly; ignore WordPress's front controller.
+<IfModule mod_rewrite.c>
+  RewriteEngine Off
+</IfModule>
+DirectoryIndex index.html
+
+# 2) Don't let search engines index the test copy.
+<IfModule mod_headers.c>
+  Header set X-Robots-Tag "noindex, nofollow"
+</IfModule>
+
+# 3) OPTIONAL — password-protect the preview.
+#    Create a .htpasswd file (many free "htpasswd generator" sites will make
+#    one for you), upload it somewhere outside the web root, put its absolute
+#    path below, and uncomment these four lines.
+# AuthType Basic
+# AuthName "FLOW Lab preview"
+# AuthUserFile /absolute/path/to/.htpasswd
+# Require valid-user

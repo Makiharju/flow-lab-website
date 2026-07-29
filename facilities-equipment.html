@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!-- =====================================================================
+     FLOW LAB · FACILITIES & EQUIPMENT — capability tiles + specialized equipment list.
+     Site docs: README.md · Shared header/footer are duplicated on every
+     page — edit them everywhere or use a tool like sed for global changes.
+     ===================================================================== -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Facilities &amp; Equipment — FLOW Lab</title>
+  <meta name="description" content="FLOW Lab facilities: X-ray shielded suite, two-phase water tunnels, flow loops, high-speed imaging, PIV, and more.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-head">
+  <div class="container site-head__row">
+    <a class="wordmark" href="index.html" aria-label="FLOW Lab home">
+      <!-- Lab emblem (from the official logo). Swap assets/img/emblem.png to update. -->
+      <img class="wordmark__emblem" src="assets/img/emblem.png" alt="" width="44" height="44">
+      <span class="wordmark__text">
+        <span class="wordmark__flow">FLOW Lab</span>
+        <span class="wordmark__sub">UC Berkeley</span>
+      </span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" class="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="people.html">People</a></li>
+        <li><a href="research-areas.html">Research</a></li>
+        <li><a href="facilities-equipment.html" aria-current="page">Facilities</a></li>
+        <li><a href="physical-model-test-facility.html">Towing Tank</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="outreach.html">Outreach</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li class="site-nav__cta"><a class="btn btn--gold" href="applying-to-join.html">Join the lab</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="eyebrow">The toolbox</p>
+      <h1>Facilities &amp; Equipment</h1>
+      <p class="page-hero__lede">
+        Purpose-built flow facilities and a deep bench of diagnostics — from a shielded X-ray suite
+        to towing-tank instrumentation.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>Facilities</h2>
+      <ul class="spec-list" style="max-width:72ch;">
+        <li>6.26 m (W) × 5.45 m (D) × 9.58 m (H) X-ray shielded space — usable with up to 225 kV sources under current approvals — with a 5-ton ceiling crane</li>
+        <li>Access to the <a href="physical-model-test-facility.html">Physical Model Test Facility</a> (towing &amp; wave tank)</li>
+        <li>6″ × 6″ horizontal two-phase-flow water tunnel</li>
+        <li>4″ × 4″ vertical two-phase-flow water tunnel</li>
+        <li>2D X-ray imaging at up to kHz rates, or down to sub-micron resolution</li>
+        <li>Time/phase-averaged multi-spectral X-ray CT with resolution down to <em>O</em>(10 µm)</li>
+        <li>½″ ID recirculating flow loop with rotating test section for X-ray micro-CT</li>
+        <li>¼″ to ½″ ID "pulsation-free" flow loop</li>
+        <li>3″ ID bubble column</li>
+      </ul>
+
+      <div class="tile mt-2" style="max-width:72ch; border-left: 4px solid var(--gold);">
+        <span class="tile__kicker">Under construction</span>
+        <p style="color:var(--ink);">(10 cm)² cavitation and low-pressure boiling vertical water tunnel</p>
+        <p style="color:var(--ink); margin-top:0.5rem;">2,800 gpm vertical air–water flow loop for wire-mesh-sensor and X-ray instrumentation validation (with Naval Nuclear Laboratory support; commissioning 2026)</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tint">
+    <div class="container">
+      <h2>Specialized equipment</h2>
+      <ul class="spec-list" style="max-width:72ch;">
+        <li>High-speed imager, Phantom v1210 — 1 Mpx at &gt;12 kHz, up to ~820 kHz at ~14 kpx</li>
+        <li>Double-pulse Nd:YAG laser, Evergreen — 200 mJ per pulse at up to 15 Hz</li>
+        <li>Ultrasonic Velocity Profiler (UVP), Met-Flow UVP-DUO MX with transducer set</li>
+        <li>Electrical Resistance Tomography (ERT) system, ITS P2+</li>
+        <li>Phase Doppler Interferometer and Laser Doppler Velocimetry (1-component)</li>
+        <li>Three X-ray sources</li>
+        <li>~2 m OD rotary stage with &lt;15 arc-second repeatability, plus an 8-axis linear-stage system on the rotary stage</li>
+        <li>&gt;3 m long flat plate with gas injectors and instrumentation for towing-tank testing</li>
+        <li>2D &amp; stereo PIV software</li>
+        <li>In-line holography setup</li>
+      </ul>
+
+      <h2 class="mt-2">Standard equipment</h2>
+      <p class="prose">
+        DAQs; cameras and lenses; &gt;20 liquid flow meters (e.g., Coriolis from &lt;20 gpm to
+        &gt;400 gpm); &gt;20 gas flow meters; 3 LVDTs; &gt;6 workstation computers; filters; a class
+        IIIa continuous laser; &gt;20 pumps (water and slurry) and &gt;10 VFDs (from 50 hp to
+        &lt;1/10 hp); &gt;100 pressure and differential-pressure transducers; conductivity probes;
+        signal generators; oscilloscopes; capacitive and radar level sensors; &gt;20 RTDs; &gt;40
+        level switches; scales; load cells; microscope; drill press; and more.
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="container site-foot__grid">
+    <div>
+      <a class="wordmark" href="index.html" aria-label="FLOW Lab home">
+        <span class="wordmark__flow">FLOW</span>
+        <span class="wordmark__sub">Lab · UC Berkeley</span>
+      </a>
+      <p style="margin-top:1rem; max-width:34ch; font-size:0.94rem;">
+        Experimental single- and multiphase fluid mechanics. Directed by
+        Associate Professor Simo A. Mäkiharju.
+      </p>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul>
+        <li>Etcheverry Hall</li>
+        <li>University of California, Berkeley</li>
+        <li><a href="mailto:makiharju@berkeley.edu">makiharju@berkeley.edu</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Links</h4>
+      <ul>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="applying-to-join.html">How to join</a></li>
+        <li><a href="https://www.youtube.com/@FLOWlab_fluids/featured">YouTube</a></li>
+        <li><a href="https://scholar.google.com/citations?user=E8e8-Z8AAAAJ">Google Scholar</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container site-foot__legal">
+    <span>© <span id="year">2026</span> FLOW Lab · University of California, Berkeley</span>
+    <span class="legal-sep" aria-hidden="true">·</span><a href="https://dap.berkeley.edu/get-help/report-web-accessibility-issue">Accessibility</a>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

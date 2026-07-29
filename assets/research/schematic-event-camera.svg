@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Schematic comparing a conventional frame camera with an event camera: per-pixel brightness changes produce a sparse asynchronous event stream">
+<title>Event-based (neuromorphic) camera sensing</title>
+<defs>
+  <marker id="dn" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#4C6379"/></marker>
+</defs>
+<rect width="800" height="500" fill="#E9F0F5"/>
+<g font-family="IBM Plex Mono, monospace" font-size="14" fill="#4C6379">
+
+  <!-- Scene: a collapsing cavitation structure -->
+  <rect x="42" y="96" width="216" height="200" rx="10" fill="#FFFFFF" stroke="#003262" stroke-width="2"/>
+  <g fill="#FDB515" fill-opacity="0.55" stroke="#003262" stroke-width="1.2">
+    <circle cx="120" cy="170" r="26"/><circle cx="166" cy="200" r="16"/>
+    <circle cx="96" cy="216" r="12"/><circle cx="176" cy="152" r="9"/><circle cx="140" cy="238" r="8"/>
+  </g>
+  <rect x="150" y="184" width="20" height="20" fill="none" stroke="#DE9A00" stroke-width="2.4"/>
+  <text x="150" y="326" text-anchor="middle" font-size="14" fill="#12263C">collapsing cavity</text>
+  <text x="150" y="346" text-anchor="middle" font-size="12">one pixel highlighted</text>
+  <path d="M172,194 C240,194 270,178 306,172" fill="none" stroke="#4C6379" stroke-width="1.2" stroke-dasharray="4 4" marker-end="url(#dn)"/>
+
+  <!-- Per-pixel log intensity with contrast thresholds -->
+  <text x="316" y="86" fill="#12263C">log I(t) at that pixel</text>
+  <line x1="316" y1="200" x2="768" y2="200" stroke="#4C6379" stroke-width="1.2"/>
+  <line x1="316" y1="104" x2="316" y2="200" stroke="#4C6379" stroke-width="1.2"/>
+  <line x1="316" y1="128" x2="768" y2="128" stroke="#DE9A00" stroke-width="1.2" stroke-dasharray="5 4"/>
+  <line x1="316" y1="176" x2="768" y2="176" stroke="#2E7CB0" stroke-width="1.2" stroke-dasharray="5 4"/>
+  <text x="774" y="132" font-size="12" fill="#DE9A00">+C</text>
+  <text x="774" y="180" font-size="12" fill="#2E7CB0">−C</text>
+  <path d="M316,168 C360,166 380,120 420,120 C452,120 466,182 500,182 C534,182 546,124 586,124 C624,124 638,184 676,184 C710,184 736,150 768,146"
+        fill="none" stroke="#003262" stroke-width="2.4"/>
+  <g fill="#12263C">
+    <circle cx="392" cy="128" r="4"/><circle cx="470" cy="176" r="4"/>
+    <circle cx="556" cy="128" r="4"/><circle cx="646" cy="176" r="4"/>
+  </g>
+
+  <!-- Correspondence guides -->
+  <g stroke="#4C6379" stroke-width="1" stroke-dasharray="3 4" opacity="0.7">
+    <line x1="392" y1="132" x2="392" y2="286"/><line x1="470" y1="180" x2="470" y2="286"/>
+    <line x1="556" y1="132" x2="556" y2="286"/><line x1="646" y1="180" x2="646" y2="286"/>
+  </g>
+
+  <!-- Sparse asynchronous event stream -->
+  <text x="316" y="266" fill="#12263C">event camera — asynchronous, µs latency</text>
+  <line x1="316" y1="316" x2="768" y2="316" stroke="#4C6379" stroke-width="1.6" marker-end="url(#dn)"/>
+  <g stroke-width="3">
+    <line x1="392" y1="316" x2="392" y2="286" stroke="#DE9A00"/>
+    <line x1="470" y1="316" x2="470" y2="346" stroke="#2E7CB0"/>
+    <line x1="556" y1="316" x2="556" y2="286" stroke="#DE9A00"/>
+    <line x1="646" y1="316" x2="646" y2="346" stroke="#2E7CB0"/>
+  </g>
+  <text x="400" y="280" font-size="12" fill="#DE9A00">ON</text>
+  <text x="486" y="362" font-size="12" fill="#2E7CB0">OFF</text>
+  <text x="768" y="336" text-anchor="end" font-size="12">t</text>
+
+  <!-- Conventional frame camera for comparison -->
+  <text x="316" y="404" fill="#12263C">frame camera — fixed Δt, full frames</text>
+  <g fill="#FFFFFF" stroke="#003262" stroke-width="1.6">
+    <rect x="316" y="418" width="72" height="46" rx="4"/><rect x="404" y="418" width="72" height="46" rx="4"/>
+    <rect x="492" y="418" width="72" height="46" rx="4"/><rect x="580" y="418" width="72" height="46" rx="4"/>
+    <rect x="668" y="418" width="72" height="46" rx="4"/>
+  </g>
+  <text x="352" y="486" text-anchor="middle" font-size="12">most pixels unchanged → redundant data</text>
+</g>
+</svg>

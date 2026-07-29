@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" role="img" aria-label="Schematic of a turbulent particle-laden jet showing ballistic large droplets, evaporation to suspended aerosol, and deposition">
+<title>Droplet and aerosol transport in a turbulent jet</title>
+<defs>
+  <marker id="fn" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#003262"/></marker>
+  <marker id="fs" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2E7CB0"/></marker>
+</defs>
+<rect width="800" height="480" fill="#E9F0F5"/>
+
+<!-- Spreading turbulent jet -->
+<polygon points="104,164 104,206 716,86 716,300" fill="#2E7CB0" opacity="0.08"/>
+<line x1="104" y1="164" x2="716" y2="86" stroke="#2E7CB0" stroke-width="1.4" stroke-dasharray="6 5" opacity="0.7"/>
+<line x1="104" y1="206" x2="716" y2="300" stroke="#2E7CB0" stroke-width="1.4" stroke-dasharray="6 5" opacity="0.7"/>
+
+<g font-family="IBM Plex Mono, monospace" font-size="14" fill="#4C6379">
+
+  <!-- Source -->
+  <path d="M46,158 L104,168 L104,202 L46,212 Z" fill="#003262"/>
+  <text x="46" y="140" fill="#12263C">source</text>
+  <text x="46" y="240" font-size="12">cough / impact / spray</text>
+  <line x1="112" y1="185" x2="168" y2="182" stroke="#003262" stroke-width="2.4" marker-end="url(#fn)"/>
+
+  <!-- Coherent structures along the jet -->
+  <g fill="none" stroke="#2E7CB0" stroke-width="2">
+    <path d="M262,152 a24,24 0 1,1 -17,8" marker-end="url(#fs)"/>
+    <path d="M262,232 a24,24 0 1,0 -17,-8" marker-end="url(#fs)"/>
+    <path d="M416,140 a28,28 0 1,1 -20,9" marker-end="url(#fs)"/>
+    <path d="M416,252 a28,28 0 1,0 -20,-9" marker-end="url(#fs)"/>
+    <path d="M572,132 a30,30 0 1,1 -21,10" marker-end="url(#fs)"/>
+  </g>
+  <text x="628" y="212" text-anchor="middle" font-size="13" fill="#12263C">coherent structures set particle transport</text>
+
+  <!-- Small droplets: evaporate, stay suspended -->
+  <g fill="#2E7CB0" fill-opacity="0.75">
+    <circle cx="300" cy="140" r="3"/><circle cx="352" cy="122" r="2.6"/><circle cx="410" cy="112" r="3"/>
+    <circle cx="470" cy="126" r="2.4"/><circle cx="520" cy="104" r="3"/><circle cx="580" cy="118" r="2.6"/>
+    <circle cx="636" cy="98" r="3"/><circle cx="690" cy="110" r="2.4"/><circle cx="660" cy="146" r="2.6"/>
+    <circle cx="600" cy="168" r="2.4"/><circle cx="540" cy="158" r="2.6"/><circle cx="466" cy="168" r="2.4"/>
+  </g>
+  <text x="716" y="70" text-anchor="end" font-size="13" fill="#12263C">suspended aerosol — d ≲ 10 µm</text>
+
+  <!-- Evaporation of a mid-size droplet -->
+  <g stroke="#DE9A00" stroke-width="1.6" fill="#FDB515" fill-opacity="0.5">
+    <circle cx="330" cy="196" r="9"/><circle cx="380" cy="188" r="6.5"/><circle cx="428" cy="180" r="4"/>
+  </g>
+  <circle cx="470" cy="174" r="9" fill="none" stroke="#DE9A00" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <text x="398" y="222" text-anchor="middle" font-size="12" fill="#12263C">evaporation → aerosol</text>
+
+  <!-- Large droplets: ballistic -->
+  <g fill="#FDB515" fill-opacity="0.65" stroke="#003262" stroke-width="1.2">
+    <circle cx="196" cy="204" r="11"/><circle cx="278" cy="252" r="10"/>
+    <circle cx="356" cy="318" r="9"/><circle cx="416" cy="386" r="8"/>
+  </g>
+  <path d="M186,196 C260,232 330,300 424,398" fill="none" stroke="#4C6379" stroke-width="1.2" stroke-dasharray="4 4"/>
+  <g fill="#FDB515" fill-opacity="0.65" stroke="#003262" stroke-width="1.2">
+    <circle cx="246" cy="212" r="9"/><circle cx="360" cy="248" r="8"/><circle cx="474" cy="330" r="7.5"/><circle cx="546" cy="392" r="7"/>
+  </g>
+  <path d="M238,204 C330,226 430,286 554,400" fill="none" stroke="#4C6379" stroke-width="1.2" stroke-dasharray="4 4"/>
+  <text x="120" y="352" font-size="13" fill="#12263C">ballistic droplets</text>
+  <text x="120" y="370" font-size="12">d ≳ 100 µm</text>
+
+  <!-- Floor and deposition -->
+  <line x1="46" y1="416" x2="754" y2="416" stroke="#003262" stroke-width="2.6"/>
+  <g fill="#DE9A00" fill-opacity="0.8">
+    <ellipse cx="424" cy="412" rx="9" ry="3.4"/><ellipse cx="556" cy="412" rx="8" ry="3"/>
+    <ellipse cx="480" cy="412" rx="6" ry="2.6"/><ellipse cx="616" cy="412" rx="6" ry="2.6"/>
+    <ellipse cx="360" cy="412" rx="5" ry="2.4"/>
+  </g>
+  <text x="754" y="440" text-anchor="end" font-size="13">deposition</text>
+</g>
+</svg>

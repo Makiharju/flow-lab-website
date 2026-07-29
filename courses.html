@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!-- =====================================================================
+     FLOW LAB · COURSES — one table row per semester, newest at the top of <tbody>.
+     Site docs: README.md · Shared header/footer are duplicated on every
+     page — edit them everywhere or use a tool like sed for global changes.
+     ===================================================================== -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Courses — FLOW Lab</title>
+  <meta name="description" content="Courses taught by Professor Simo Mäkiharju at UC Berkeley Mechanical Engineering.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-head">
+  <div class="container site-head__row">
+    <a class="wordmark" href="index.html" aria-label="FLOW Lab home">
+      <!-- Lab emblem (from the official logo). Swap assets/img/emblem.png to update. -->
+      <img class="wordmark__emblem" src="assets/img/emblem.png" alt="" width="44" height="44">
+      <span class="wordmark__text">
+        <span class="wordmark__flow">FLOW Lab</span>
+        <span class="wordmark__sub">UC Berkeley</span>
+      </span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" class="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="people.html">People</a></li>
+        <li><a href="research-areas.html">Research</a></li>
+        <li><a href="facilities-equipment.html">Facilities</a></li>
+        <li><a href="physical-model-test-facility.html">Towing Tank</a></li>
+        <li><a href="courses.html" aria-current="page">Courses</a></li>
+        <li><a href="outreach.html">Outreach</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li class="site-nav__cta"><a class="btn btn--gold" href="applying-to-join.html">Join the lab</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="eyebrow">Teaching</p>
+      <h1>Courses</h1>
+      <p class="page-hero__lede">Courses taught by Prof. Mäkiharju, most recent first.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container" style="max-width:860px;">
+      <table class="table">
+        <thead>
+          <tr><th scope="col">Semester</th><th scope="col">Course</th><th scope="col">Title</th></tr>
+        </thead>
+        <tbody>
+          <!-- TO ADD A SEMESTER: copy a row and place it at the top of tbody -->
+          <tr><td>Spring 2025</td><td>E7</td><td>Introduction to Computer Programming for Scientists and Engineers</td></tr>
+          <tr><td>Spring 2025</td><td>E201 &amp; ME160</td><td>Ocean Engineering Seminars (co-hosted)</td></tr>
+          <tr><td>Fall 2024</td><td>ME165 &amp; ME242</td><td>Ocean-Environment Mechanics</td></tr>
+          <tr><td>Fall 2023</td><td>ME248</td><td>Experimental Methods in Single- and Multiphase Flows</td></tr>
+          <tr><td>Spring 2023</td><td>ME106</td><td>Fluid Mechanics</td></tr>
+          <tr><td>Fall 2022</td><td>ME165 &amp; ME242</td><td>Ocean-Environment Mechanics</td></tr>
+          <tr><td>Spring 2022</td><td>ME103</td><td>Experimentation and Measurements</td></tr>
+          <tr><td>Fall 2021</td><td>ME248</td><td>Experimental Methods in Single- and Multiphase Flows</td></tr>
+          <tr><td>Spring 2021</td><td>ME103</td><td>Experimentation and Measurements</td></tr>
+          <tr><td>Fall 2020</td><td>ME103</td><td>Experimentation and Measurements</td></tr>
+          <tr><td>Spring 2020</td><td>ME165 &amp; ME242</td><td>Ocean-Environment Mechanics</td></tr>
+          <tr><td>Fall 2019</td><td>ME103</td><td>Experimentation and Measurements</td></tr>
+          <tr><td>Spring 2019</td><td>ME292K</td><td>Advanced Special Topics in Ocean Engineering: Advanced Measurements</td></tr>
+          <tr><td>Fall 2018</td><td>ME103</td><td>Experimentation and Measurements</td></tr>
+          <tr><td>Spring 2018</td><td>ME165</td><td>Ocean-Environment Mechanics</td></tr>
+          <tr><td>Fall 2017</td><td>ME102A</td><td>Introduction to Measurements</td></tr>
+          <tr><td>Spring 2017</td><td>ME102A</td><td>Introduction to Measurements</td></tr>
+          <tr><td>Fall 2016</td><td>ME241A</td><td>Marine Hydrodynamics I</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="container site-foot__grid">
+    <div>
+      <a class="wordmark" href="index.html" aria-label="FLOW Lab home">
+        <span class="wordmark__flow">FLOW</span>
+        <span class="wordmark__sub">Lab · UC Berkeley</span>
+      </a>
+      <p style="margin-top:1rem; max-width:34ch; font-size:0.94rem;">
+        Experimental single- and multiphase fluid mechanics. Directed by
+        Associate Professor Simo A. Mäkiharju.
+      </p>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul>
+        <li>Etcheverry Hall</li>
+        <li>University of California, Berkeley</li>
+        <li><a href="mailto:makiharju@berkeley.edu">makiharju@berkeley.edu</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Links</h4>
+      <ul>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="applying-to-join.html">How to join</a></li>
+        <li><a href="https://www.youtube.com/@FLOWlab_fluids/featured">YouTube</a></li>
+        <li><a href="https://scholar.google.com/citations?user=E8e8-Z8AAAAJ">Google Scholar</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container site-foot__legal">
+    <span>© <span id="year">2026</span> FLOW Lab · University of California, Berkeley</span>
+    <span class="legal-sep" aria-hidden="true">·</span><a href="https://dap.berkeley.edu/get-help/report-web-accessibility-issue">Accessibility</a>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

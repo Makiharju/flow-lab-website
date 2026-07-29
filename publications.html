@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<!-- =====================================================================
+     FLOW LAB · PUBLICATIONS — rendered from publications.bib by js/publications.js. EDIT THE .bib FILE, not this page.
+     Site docs: README.md · Shared header/footer are duplicated on every
+     page — edit them everywhere or use a tool like sed for global changes.
+     ===================================================================== -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Publications — FLOW Lab</title>
+  <meta name="description" content="Journal publications, book chapters, conference papers, and patents from the FLOW Lab at UC Berkeley.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-head">
+  <div class="container site-head__row">
+    <a class="wordmark" href="index.html" aria-label="FLOW Lab home">
+      <!-- Lab emblem (from the official logo). Swap assets/img/emblem.png to update. -->
+      <img class="wordmark__emblem" src="assets/img/emblem.png" alt="" width="44" height="44">
+      <span class="wordmark__text">
+        <span class="wordmark__flow">FLOW Lab</span>
+        <span class="wordmark__sub">UC Berkeley</span>
+      </span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" class="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="people.html">People</a></li>
+        <li><a href="research-areas.html">Research</a></li>
+        <li><a href="facilities-equipment.html">Facilities</a></li>
+        <li><a href="physical-model-test-facility.html">Towing Tank</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="outreach.html">Outreach</a></li>
+        <li><a href="publications.html" aria-current="page">Publications</a></li>
+        <li class="site-nav__cta"><a class="btn btn--gold" href="applying-to-join.html">Join the lab</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="eyebrow">The record</p>
+      <h1>Publications</h1>
+      <p class="page-hero__lede">
+        Jump to: <a href="#journal" style="color:var(--gold);">Journal articles</a> ·
+        <a href="#chapters" style="color:var(--gold);">Book chapters</a> ·
+        <a href="#conference" style="color:var(--gold);">Conference papers</a> ·
+        <a href="#patent" style="color:var(--gold);">Patent</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       EVERYTHING BELOW IS RENDERED BY js/publications.js FROM publications.bib
+       To add or edit a paper: edit publications.bib ONLY (instructions are at
+       the top of that file). The empty <ol> elements are the render targets.
+       ===================================================================== -->
+
+  <section class="section" id="journal">
+    <div class="container" style="max-width:900px;">
+      <div class="section__head">
+        <p class="eyebrow">Peer-reviewed</p>
+        <h2>Journal publications</h2>
+        <p style="margin:0.7rem 0 0; color:var(--slate); max-width:70ch;">
+          Every entry links its DOI. Where a free copy is available &mdash; in
+          <a href="https://escholarship.org/uc/ucb">eScholarship</a>, the University of
+          California&rsquo;s open-access repository, or as a hosted PDF &mdash; that is
+          linked too. The list is generated from
+          <a href="publications.bib" download>publications.bib</a> &mdash; download it
+          for your reference manager.
+        </p>
+      </div>
+      <noscript>
+        <p class="pub-fallback">This list is built from
+          <a href="publications.bib">publications.bib</a>. Enable JavaScript to view it
+          here, or download the file for the full record.</p>
+      </noscript>
+      <ol class="pub-list" id="journal-list"></ol>
+    </div>
+  </section>
+
+  <section class="section section--tint" id="chapters">
+    <div class="container" style="max-width:900px;">
+      <div class="section__head">
+        <p class="eyebrow">Books</p>
+        <h2>Book chapters</h2>
+      </div>
+      <ol class="pub-list" id="chapter-list"></ol>
+    </div>
+  </section>
+
+  <section class="section" id="conference">
+    <div class="container" style="max-width:900px;">
+      <div class="section__head">
+        <p class="eyebrow">Refereed proceedings</p>
+        <h2>Conference papers</h2>
+      </div>
+      <ol class="pub-list" id="conference-list"></ol>
+    </div>
+  </section>
+
+  <section class="section section--tint" id="patent">
+    <div class="container" style="max-width:900px;">
+      <div class="section__head">
+        <p class="eyebrow">Intellectual property</p>
+        <h2>Patents</h2>
+      </div>
+      <ol class="pub-list" id="patent-list"></ol>
+
+      <h2 class="mt-2">Also on record</h2>
+      <ul class="spec-list" style="max-width:60ch;">
+        <li>64 conference presentations</li>
+        <li>33 invited talks</li>
+        <li>40 government, university, or industry reports</li>
+        <li>2 articles in non-archival magazines or journals</li>
+        <li>2 interviews or appearances in non-archival magazines</li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="container site-foot__grid">
+    <div>
+      <a class="wordmark" href="index.html" aria-label="FLOW Lab home">
+        <span class="wordmark__flow">FLOW</span>
+        <span class="wordmark__sub">Lab · UC Berkeley</span>
+      </a>
+      <p style="margin-top:1rem; max-width:34ch; font-size:0.94rem;">
+        Experimental single- and multiphase fluid mechanics. Directed by
+        Associate Professor Simo A. Mäkiharju.
+      </p>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul>
+        <li>Etcheverry Hall</li>
+        <li>University of California, Berkeley</li>
+        <li><a href="mailto:makiharju@berkeley.edu">makiharju@berkeley.edu</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Links</h4>
+      <ul>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="applying-to-join.html">How to join</a></li>
+        <li><a href="https://www.youtube.com/@FLOWlab_fluids/featured">YouTube</a></li>
+        <li><a href="https://scholar.google.com/citations?user=E8e8-Z8AAAAJ">Google Scholar</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container site-foot__legal">
+    <span>© <span id="year">2026</span> FLOW Lab · University of California, Berkeley</span>
+    <span class="legal-sep" aria-hidden="true">·</span><a href="https://dap.berkeley.edu/get-help/report-web-accessibility-issue">Accessibility</a>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/publications.js"></script>
+</body>
+</html>

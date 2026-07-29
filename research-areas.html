@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<!-- =====================================================================
+     FLOW LAB · RESEARCH AREAS — one <div class="media-row"> per topic; media in assets/research/.
+     Site docs: README.md · Shared header/footer are duplicated on every
+     page — edit them everywhere or use a tool like sed for global changes.
+     ===================================================================== -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Research Areas — FLOW Lab</title>
+  <meta name="description" content="FLOW Lab research: air lubrication drag reduction, superhydrophobic surfaces, cavitation, and advanced X-ray and optical flow diagnostics.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-head">
+  <div class="container site-head__row">
+    <a class="wordmark" href="index.html" aria-label="FLOW Lab home">
+      <!-- Lab emblem (from the official logo). Swap assets/img/emblem.png to update. -->
+      <img class="wordmark__emblem" src="assets/img/emblem.png" alt="" width="44" height="44">
+      <span class="wordmark__text">
+        <span class="wordmark__flow">FLOW Lab</span>
+        <span class="wordmark__sub">UC Berkeley</span>
+      </span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" class="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="people.html">People</a></li>
+        <li><a href="research-areas.html" aria-current="page">Research</a></li>
+        <li><a href="facilities-equipment.html">Facilities</a></li>
+        <li><a href="physical-model-test-facility.html">Towing Tank</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="outreach.html">Outreach</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li class="site-nav__cta"><a class="btn btn--gold" href="applying-to-join.html">Join the lab</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="eyebrow">What we study</p>
+      <h1>Research Areas</h1>
+      <p class="page-hero__lede">
+        Multiphase flows for energy production, transportation, industrial, biological, and
+        environmental applications — the overarching, unifying theme of our research.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="prose">
+        <p>
+          The goal of our research is to advance the physical understanding of high-Reynolds-number
+          single- and multiphase flows, primarily through experiments and through the development
+          and use of advanced measurement techniques. Multiphase flows appear in almost every aspect
+          of modern life: offshore applications, biological flows, energy production, chemical
+          processing, and naval hydrodynamics.
+        </p>
+        <p>
+          Specific topics include reducing the drag of marine vehicles, mitigating damage and noise
+          caused by cavitation in naval and industrial applications, and efficient handling of flow
+          in energy production. For details, see <a href="publications.html">Publications</a> and our
+          <a href="https://www.youtube.com/@FLOWlab_fluids/featured">YouTube channel</a>.
+        </p>
+      </div>
+
+      <!-- ===================================================================
+           STRUCTURE: four broad themes (what the lab works on), each grouping
+           its subtopics. The homepage tiles use the SAME four themes and link
+           to the anchors below — keep the two in sync when editing.
+           TO ADD A SUBTOPIC: copy a .media-row and add it under a goal;
+           alternate the --flip modifier to keep the zig-zag.
+           =================================================================== -->
+
+      <div class="section__head" id="marine" style="margin-top:3rem; scroll-margin-top:90px;">
+        <p class="eyebrow">Theme</p>
+        <h2>Decarbonizing marine transport</h2>
+        <p style="margin:0.7rem 0 0; color:var(--slate); max-width:68ch;">Shipping moves ~80% of world trade and burns fuel mostly to overcome friction. We study the multiphase physics that could cut that bill.</p>
+      </div>
+
+      <div class="media-row">
+        <div class="media-row__media">
+          <img src="https://flow.berkeley.edu/wp-content/uploads/2015/05/FDR_fig13.png"
+               alt="Topology of gas jets injected beneath a surface subject to liquid cross-flow" loading="lazy">
+          <p class="figcap">
+            Gas jets injected into a boundary layer beneath a surface and subject to liquid
+            cross-flow. See Mäkiharju et&nbsp;al.,
+            <a href="https://doi.org/10.1017/jfm.2017.98">J. Fluid Mech. 818 (2017)</a>.
+          </p>
+          <p class="area-papers__label">Key papers</p>
+          <ul class="area-papers">
+            <li><a href="https://doi.org/10.1016/j.oceaneng.2017.10.041">Mäkiharju &amp; Ceccio (2018), <i>Ocean Engineering</i></a></li>
+            <li><a href="https://doi.org/10.1017/jfm.2017.98">Mäkiharju et al. (2017), <i>J. Fluid Mech.</i> 818</a></li>
+            <li><a href="https://doi.org/10.1017/jfm.2012.588">Elbing et al. (2013), <i>J. Fluid Mech.</i> 717</a></li>
+            <li><a href="https://doi.org/10.2478/IJNAOE-2013-0107">Mäkiharju et al. (2012), <i>Int. J. Naval Archit. Ocean Eng.</i></a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="area-meta"><span class="area-flag">Active</span><span>2010–present</span></p>
+          <h3>Multiphase flows for frictional drag reduction</h3>
+          <p>
+            Frictional drag accounts for roughly 60% of a typical cargo ship's propulsive power.
+            Air-layer drag reduction could cut a ship's frictional resistance significantly — with
+            major economic and environmental impact. We study how air layers form and persist,
+            including gas injection from discrete ports rather than continuous slots.
+          </p>
+        </div>
+      </div>
+
+      <div class="media-row media-row--flip">
+        <div class="media-row__media">
+          <img src="https://flow.berkeley.edu/wp-content/uploads/2018/05/SHS_DR_EXAMPLE.png"
+               alt="CT scan showing gas trapped on a superhydrophobic surface" loading="lazy">
+          <p class="figcap">
+            CT scan of gas trapped on a superhydrophobic surface. Left: axial cut (dark spots are
+            plastrons). Right: gas interfaces seen through the wall, showing coverage.
+          </p>
+          <p class="area-papers__label">Key papers</p>
+          <ul class="area-papers">
+            <li><a href="https://doi.org/10.1007/s00348-024-03789-x">Rodriguez &amp; Mäkiharju (2024), <i>Experiments in Fluids</i></a></li>
+            <li><a href="https://doi.org/10.1017/jfm.2022.124">Martinez &amp; Mäkiharju (2022), <i>J. Fluid Mech.</i> 938</a></li>
+            <li><a href="https://doi.org/10.5957/jsr.2020.64.2.118">Peifer et al. (2020), <i>J. Ship Research</i></a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="area-meta"><span class="area-flag">Active</span><span>2018–present</span></p>
+          <h3>Physics of superhydrophobic-surface drag reduction</h3>
+          <p>
+            Superhydrophobic surfaces (SHS) may reduce frictional drag on ships and in pipelines.
+            Teaming with leading materials groups who develop the surfaces, we investigate the
+            physical mechanisms of SHS drag reduction — and the limits of the technique.
+          </p>
+        </div>
+      </div>
+
+      <!-- FIGURE WANTED: an instantaneous free-surface elevation field or PIV/LIF snapshot from the Orun & Mäkiharju JFM study (surface scars + underlying eddies in one frame) -->
+      <div class="media-row">
+        <div class="media-row__media">
+          <img src="assets/research/schematic-tbl-free-surface.svg"
+               alt="Schematic of a turbulent boundary layer interacting with a deformable free surface, showing eddies producing surface scars and upwellings" loading="lazy">
+          <p class="figcap">
+            Schematic: wall turbulence meeting a deformable free surface. The largest eddies reach
+            the interface, leaving scars and upwellings that in turn feed back on the boundary layer.
+          </p>
+          <p class="area-papers__label">Key papers</p>
+          <ul class="area-papers">
+            <li><a href="publications.html#journal">Orun &amp; Mäkiharju (2026), <i>J. Fluid Mech.</i> — accepted</a></li>
+            <li><a href="publications.html#conference">Orun &amp; Mäkiharju (2026), 36th Symp. Naval Hydrodynamics</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="area-meta"><span class="area-flag">Active</span><span>2024–present</span></p>
+          <h3>Turbulent boundary layers meeting a free surface</h3>
+          <p>
+            Air lubrication ultimately succeeds or fails at an interface. We measure how a turbulent
+            boundary layer and a free surface exchange momentum and vorticity — how eddies deform
+            the surface, and how that deformation feeds back on the near-wall turbulence. This is
+            the canonical problem sitting underneath the applied air-layer work.
+          </p>
+        </div>
+      </div>
+
+      <div class="section__head" id="energy" style="margin-top:3rem; scroll-margin-top:90px;">
+        <p class="eyebrow">Theme</p>
+        <h2>Multiphase flows in energy &amp; industrial systems</h2>
+        <p style="margin:0.7rem 0 0; color:var(--slate); max-width:68ch;">Bubbles, cavities and phase change govern heat transfer, loading and noise in reactors, pumps, valves and propulsors.</p>
+      </div>
+
+      <!-- FIGURE WANTED: a photo of the two-channel test section, or a wire-mesh-sensor void-fraction map across the gap (Callison 2023) -->
+      <div class="media-row media-row--flip">
+        <div class="media-row__media">
+          <img src="assets/research/schematic-narrow-gap-mixing.svg"
+               alt="Schematic of two parallel subchannels connected by a narrow gap, with coherent structures driving cross-gap mixing, measured by wire-mesh sensors and X-ray densitometry" loading="lazy">
+          <p class="figcap">
+            Schematic: two parallel subchannels connected by a narrow gap. Coherent structures in the
+            gap drive cross-channel exchange; we resolve them with wire-mesh sensors and X-ray
+            densitometry. See
+            <a href="https://doi.org/10.1016/j.ijmultiphaseflow.2023.104481">Int. J. Multiphase Flow (2023)</a>.
+          </p>
+          <p class="area-papers__label">Key papers</p>
+          <ul class="area-papers">
+            <li><a href="https://doi.org/10.1016/j.ijmultiphaseflow.2023.104481">Callison et al. (2023), <i>Int. J. Multiphase Flow</i></a></li>
+            <li><a href="https://doi.org/10.1016/j.expthermflusci.2019.04.013">Mäkiharju et al. (2019), <i>Exp. Thermal &amp; Fluid Science</i></a></li>
+            <li><a href="https://escholarship.org/uc/item/45q2g0qx">Mäkiharju et al. (2015), NURETH-16</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="area-meta"><span class="area-flag">Active</span><span>2013–present</span></p>
+          <h3>Multiphase mixing through narrow gaps</h3>
+          <p>
+            Mixing between adjacent flow channels connected by a narrow gap governs heat and mass
+            transfer in the rod-bundle geometries central to nuclear thermal-hydraulics. We measure
+            single- and two-phase mixing for both balanced and unbalanced channel flows, resolving
+            the coherent structures within the gap and producing data intended for code validation.
+          </p>
+        </div>
+      </div>
+
+      <!-- FIGURE WANTED: a high-speed image or phase-averaged void-fraction field of the bubbly wake showing bubbles concentrated in the vortex cores (Thacher 2024 / 2026) -->
+      <div class="media-row">
+        <div class="media-row__media">
+          <img src="assets/research/schematic-bubbly-vortex-shedding.svg"
+               alt="Schematic of bubbly cross-flow over a circular cylinder: bubbles collect in the cores of shed vortices and separation moves aft" loading="lazy">
+          <p class="figcap">
+            Schematic: bubbles injected into cross-flow over a cylinder collect in the low-pressure
+            vortex cores, shift the shedding frequency, and move the separation point aft. See
+            <a href="https://doi.org/10.1016/j.ijmultiphaseflow.2026.105606">Int. J. Multiphase Flow (2026)</a>.
+          </p>
+          <p class="area-papers__label">Key papers</p>
+          <ul class="area-papers">
+            <li><a href="https://doi.org/10.1016/j.ijmultiphaseflow.2026.105606">Thacher et al. (2026), <i>Int. J. Multiphase Flow</i></a></li>
+            <li><a href="https://doi.org/10.1016/j.ijmultiphaseflow.2024.104917">Thacher et al. (2024), <i>Int. J. Multiphase Flow</i></a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="area-meta"><span class="area-flag">Active</span><span>2019–present</span></p>
+          <h3>Bubble–vortex interaction and flow–structure coupling</h3>
+          <p>
+            Adding bubbles to a separated flow changes it qualitatively, not just quantitatively. In
+            cross-flow over a cylinder we find that bubbles accumulate in vortex cores, shift the
+            shedding frequency, and can trigger transition to the supercritical regime far below
+            the single-phase Reynolds number — with direct consequences for drag, loading and noise.
+          </p>
+        </div>
+      </div>
+
+      <div class="media-row media-row--flip">
+        <div class="media-row__media">
+          <video class="video-embed" controls muted loop playsinline preload="metadata"
+                 aria-label="Silent video: cavitation of a Newtonian fluid in a sudden gap expansion"
+                 src="https://flow.berkeley.edu/wp-content/uploads/2018/05/GapCavitation.mp4"></video>
+          <p class="figcap">
+            Cavitation of a Newtonian fluid in a sudden gap expansion. (Silent video.)
+          </p>
+          <p class="area-papers__label">Key papers</p>
+          <ul class="area-papers">
+            <li><a href="https://doi.org/10.1103/PhysRevFluids.7.023302">Bokman et al. (2022), <i>Phys. Rev. Fluids</i></a></li>
+            <li><a href="https://doi.org/10.1017/jfm.2017.569">Mäkiharju et al. (2017), <i>J. Fluid Mech.</i> 829</a></li>
+            <li><a href="https://doi.org/10.1017/jfm.2016.425">Ganesh et al. (2016), <i>J. Fluid Mech.</i> 802</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="area-meta"><span class="area-flag">Active</span><span>2010–present</span></p>
+          <h3>Cavitation for industrial, transportation &amp; medical applications</h3>
+          <p>
+            When local pressure drops below vapor pressure, a liquid can vaporize — cavitation. It
+            appears in valves, on ship propellers, and even in the human body, and the inception
+            pressure depends on the liquid's nuclei content and on nuclei at adjacent surfaces. We
+            study cavitation in both Newtonian and non-Newtonian fluids.
+          </p>
+        </div>
+      </div>
+
+      <div class="section__head" id="health" style="margin-top:3rem; scroll-margin-top:90px;">
+        <p class="eyebrow">Theme</p>
+        <h2>Phase change &amp; transport for health and environment</h2>
+        <p style="margin:0.7rem 0 0; color:var(--slate); max-width:68ch;">The same nucleation and transport physics decides whether an organ survives freezing and where an airborne droplet lands.</p>
+      </div>
+
+      <!-- FIGURE WANTED: a reconstructed CT slice contrasting isobaric (ice/cavity present) with isochoric (clear) vitrification — the single most persuasive image for this area (Parker 2024 / Ali 2024) -->
+      <div class="media-row">
+        <div class="media-row__media">
+          <img src="assets/research/schematic-isochoric-vitrification.svg"
+               alt="Schematic of photon-counting multi-energy X-ray computed tomography of a rigid constant-volume chamber during vitrification" loading="lazy">
+          <p class="figcap">
+            Schematic: photon-counting, multi-energy X-ray CT of a rigid constant-volume chamber.
+            Holding volume fixed raises pressure during cooling and suppresses ice. See
+            <a href="https://doi.org/10.1016/j.cryobiol.2023.104839">Cryobiology (2024)</a>
+            — Arthur W. Rowe Best Paper Honorable Mention, Society for Cryobiology.
+          </p>
+          <p class="area-papers__label">Key papers</p>
+          <ul class="area-papers">
+            <li><a href="https://doi.org/10.1016/j.cryobiol.2024.104935">Ali et al. (2024), <i>Cryobiology</i></a></li>
+            <li><a href="https://doi.org/10.1016/j.cryobiol.2023.104839">Parker et al. (2024), <i>Cryobiology</i> — Rowe Best Paper Hon. Mention</a></li>
+            <li><a href="https://doi.org/10.1080/07366205.2026.2647885">González-Díaz et al. (2026), <i>BioTechniques</i></a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="area-meta"><span class="area-flag">Active</span><span>2023–present</span></p>
+          <h3>Phase change, vitrification and cryobiology</h3>
+          <p>
+            Vitrifying a biological sample without forming ice is fundamentally a nucleation and
+            heat-transfer problem. With the Rubinsky group we use photon-counting, multi-energy
+            X-ray computed tomography to observe isochoric (constant-volume) vitrification
+            directly — resolving the ice- and cavity-free end state that isobaric cooling cannot reach.
+          </p>
+        </div>
+      </div>
+
+      <!-- FIGURE WANTED: a high-speed or PLIF image of the actual droplet-laden jet, or the 96-well-plate impact experiment already filmed for the video section -->
+      <div class="media-row media-row--flip">
+        <div class="media-row__media">
+          <img src="assets/research/schematic-droplet-aerosol.svg"
+               alt="Schematic of a turbulent particle-laden jet: large droplets fall ballistically while small droplets evaporate into suspended aerosol" loading="lazy">
+          <p class="figcap">
+            Schematic: in a particle-laden turbulent jet, large droplets fall ballistically while
+            small ones evaporate into aerosol carried by coherent structures. See
+            <a href="https://doi.org/10.1080/02786826.2021.1959019">Aerosol Sci. Technol. (2021)</a>.
+          </p>
+          <p class="area-papers__label">Key papers</p>
+          <ul class="area-papers">
+            <li><a href="https://doi.org/10.1080/02786826.2022.2044449">Thacher &amp; Mäkiharju (2022), <i>Aerosol Sci. &amp; Technology</i></a></li>
+            <li><a href="https://doi.org/10.1080/02786826.2021.1959019">Thacher et al. (2021), <i>Aerosol Sci. &amp; Technology</i></a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="area-meta"><span class="area-flag area-flag--past">Earlier work</span><span>2020–2022</span></p>
+          <h3>Droplet and aerosol transport</h3>
+          <p>
+            Where a droplet ends up depends on its size and on the coherent structures carrying it.
+            We study particle-laden turbulent jets — from coughs to laboratory spills — measuring
+            how large droplets fall ballistically while smaller ones evaporate into aerosol that
+            follows the flow, and how that partition sets deposition and exposure.
+          </p>
+        </div>
+      </div>
+
+      <div class="section__head" id="measurement" style="margin-top:3rem; scroll-margin-top:90px;">
+        <p class="eyebrow">Theme</p>
+        <h2>Measurement science: seeing the inaccessible</h2>
+        <p style="margin:0.7rem 0 0; color:var(--slate); max-width:68ch;">Many flows that matter are opaque, fast, or sealed inside metal. We build the instruments that make them measurable — and those instruments now travel far beyond fluids.</p>
+      </div>
+
+      <div class="media-row">
+        <div class="media-row__media">
+          <img src="https://flow.berkeley.edu/wp-content/uploads/2015/05/xray_example.png"
+               alt="X-ray measurement of void fraction distribution in a shedding cavity" loading="lazy">
+          <p class="figcap">
+            X-ray void-fraction fields in a shedding cavity at initial collapse and at the start of a
+            new cycle. 1 ms exposure; 4% void-fraction and 0.5 mm spatial resolution. Void fractions
+            span 0% in the free stream to nearly 100% in the sheet cavity. Flow right to left.
+          </p>
+          <p class="area-papers__label">Key papers</p>
+          <ul class="area-papers">
+            <li><a href="https://doi.org/10.1016/j.flowmeasinst.2026.103420">Rodriguez et al. (2026), <i>Flow Meas. &amp; Instrumentation</i></a></li>
+            <li><a href="https://doi.org/10.1016/j.flowmeasinst.2024.102536">Parker et al. (2024), <i>Flow Meas. &amp; Instrumentation</i></a></li>
+            <li><a href="https://doi.org/10.1007/s00348-022-03530-6">Parker et al. (2022), <i>Experiments in Fluids</i></a></li>
+            <li><a href="https://doi.org/10.1007/s00348-021-03362-w">Mäkiharju et al. (2022), <i>Experiments in Fluids</i></a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="area-meta"><span class="area-flag">Active</span><span>2017–present</span></p>
+          <h3>Advanced X-ray &amp; optical flow diagnostics</h3>
+          <p>
+            Many of the most important multiphase flows are optically opaque. We develop and use
+            time-resolved X-ray densitometry, multi-spectral computed tomography, X-ray particle
+            velocimetry and tracking (XPV/XPTV), and tomographic PIV to measure what conventional
+            optics cannot see.
+          </p>
+        </div>
+      </div>
+
+      <!-- FIGURE WANTED: a side-by-side of a raw event stream against a conventional high-speed frame of the same cavitation event — visually striking and unique to your lab -->
+      <div class="media-row media-row--flip">
+        <div class="media-row__media">
+          <img src="assets/research/schematic-event-camera.svg"
+               alt="Schematic comparing a conventional frame camera with an event camera, which reports per-pixel brightness changes asynchronously" loading="lazy">
+          <p class="figcap">
+            Schematic: an event camera reports per-pixel brightness changes asynchronously with
+            microsecond latency, rather than full frames at a fixed rate. See
+            <a href="https://doi.org/10.1088/1361-6501/ae70a4">Meas. Sci. Technol. (2026)</a>.
+          </p>
+          <p class="area-papers__label">Key paper</p>
+          <ul class="area-papers">
+            <li><a href="https://doi.org/10.1088/1361-6501/ae70a4">Thacher et al. (2026), <i>Meas. Science &amp; Technology</i></a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="area-meta"><span class="area-flag">Active</span><span>2023–present</span></p>
+          <h3>Event-based (neuromorphic) cameras</h3>
+          <p>
+            Event cameras report only what changes, pixel by pixel, with microsecond latency — a
+            natural match for sparse, fast phenomena such as cavitation inception, bubble passage
+            and vortex shedding. We characterise when their frequency estimates can be trusted, and
+            build triggering and detection systems around them.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tint">
+    <div class="container">
+      <div class="section__head section__head--row">
+        <div>
+          <p class="eyebrow">Watch</p>
+          <h2>The lab in motion</h2>
+        </div>
+        <a class="section__more" href="https://www.youtube.com/@FLOWlab_fluids/featured">More on YouTube →</a>
+      </div>
+      <div class="video-grid">
+        <figure style="margin:0;">
+          <iframe class="video-embed" loading="lazy"
+                  src="https://www.youtube.com/embed/oUPBvr6TO2E"
+                  title="Droplet generation from a simulated laboratory accident"
+                  allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+          <figcaption class="figcap">Droplet generation from a simulated laboratory accident: a 96-well plate dropped from counter height.</figcaption>
+        </figure>
+        <figure style="margin:0;">
+          <iframe class="video-embed" loading="lazy"
+                  src="https://www.youtube.com/embed/iB_kPrlWqOI"
+                  title="Lagrangian tracking of bubbles entrained by a plunging jet"
+                  allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+          <figcaption class="figcap">Lagrangian tracking of bubbles entrained by a plunging jet (A. Goujon, G. Chamoulaud &amp; S. Mäkiharju).</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="container site-foot__grid">
+    <div>
+      <a class="wordmark" href="index.html" aria-label="FLOW Lab home">
+        <span class="wordmark__flow">FLOW</span>
+        <span class="wordmark__sub">Lab · UC Berkeley</span>
+      </a>
+      <p style="margin-top:1rem; max-width:34ch; font-size:0.94rem;">
+        Experimental single- and multiphase fluid mechanics. Directed by
+        Associate Professor Simo A. Mäkiharju.
+      </p>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul>
+        <li>Etcheverry Hall</li>
+        <li>University of California, Berkeley</li>
+        <li><a href="mailto:makiharju@berkeley.edu">makiharju@berkeley.edu</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Links</h4>
+      <ul>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="applying-to-join.html">How to join</a></li>
+        <li><a href="https://www.youtube.com/@FLOWlab_fluids/featured">YouTube</a></li>
+        <li><a href="https://scholar.google.com/citations?user=E8e8-Z8AAAAJ">Google Scholar</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container site-foot__legal">
+    <span>© <span id="year">2026</span> FLOW Lab · University of California, Berkeley</span>
+    <span class="legal-sep" aria-hidden="true">·</span><a href="https://dap.berkeley.edu/get-help/report-web-accessibility-issue">Accessibility</a>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

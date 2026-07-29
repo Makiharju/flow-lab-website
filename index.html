@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<!-- =====================================================================
+     FLOW LAB · HOME — hero, six recent-paper cards (assets/papers/), sponsors. To feature a new paper, copy a <article class="paper-card"> block.
+     Site docs: README.md · Shared header/footer are duplicated on every
+     page — edit them everywhere or use a tool like sed for global changes.
+     ===================================================================== -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FLOW Lab — Experimental Fluid Mechanics at UC Berkeley</title>
+  <meta name="description" content="The FLOW Lab at UC Berkeley advances the physical understanding of high-Reynolds-number single- and multiphase flows, and develops the X-ray, tomographic and event-based diagnostics that make opaque and fast phenomena measurable.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ======================= HEADER (same on every page; set aria-current on the active link) -->
+<header class="site-head">
+  <div class="container site-head__row">
+    <a class="wordmark" href="index.html" aria-label="FLOW Lab home">
+      <!-- Lab emblem (from the official logo). Swap assets/img/emblem.png to update. -->
+      <img class="wordmark__emblem" src="assets/img/emblem.png" alt="" width="44" height="44">
+      <span class="wordmark__text">
+        <span class="wordmark__flow">FLOW Lab</span>
+        <span class="wordmark__sub">UC Berkeley</span>
+      </span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" class="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="people.html">People</a></li>
+        <li><a href="research-areas.html">Research</a></li>
+        <li><a href="facilities-equipment.html">Facilities</a></li>
+        <li><a href="physical-model-test-facility.html">Towing Tank</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="outreach.html">Outreach</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li class="site-nav__cta"><a class="btn btn--gold" href="applying-to-join.html">Join the lab</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ======================= HERO -->
+  <section class="hero">
+    <div class="bubbles" aria-hidden="true">
+      <span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+    <div class="container">
+      <p class="eyebrow">Experimental fluid mechanics · UC Berkeley</p>
+      <!-- HEADLINE: alternatives if you want a different register —
+           "Making the complex measurable."   (sober, academic)
+           "Making the opaque measurable."    (literal: X-ray through metal)
+           "Measuring what cannot be seen."   (no verb-forward claim)      -->
+      <h1 class="hero__title">Making the invisible measurable.</h1>
+      <p class="hero__lede">
+        We advance the physical understanding of high-Reynolds-number single- and multiphase
+        flows — and build the instruments that make them measurable. Those methods now reach
+        well beyond fluids, from drones to cryobiology.
+      </p>
+      <div class="hero__actions">
+        <a class="btn btn--gold" href="research-areas.html">Explore our research</a>
+        <a class="btn btn--ghost" href="#recent-papers">Recent papers ↓</a>
+      </div>
+      <!-- Capability readout — chosen for what is RARE, not for the biggest
+           numbers. Generic specs (tube voltage, tank length, frame rate) live
+           on the Facilities page; these four are hard to find anywhere else. -->
+      <p class="hero__stats">
+        <span><b>128</b> energy-threshold CT</span>
+        <span><b>O(1 kHz)</b> in-lab X-ray velocimetry</span>
+        <span><b>O(50 µm)</b> tungsten X-ray tracers</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- ======================= RECENT PAPERS
+       TO ADD A PAPER: copy one <article class="paper-card"> … </article> block,
+       paste it at the TOP of .paper-grid, and edit:
+         1. the <img src> (put your figure in assets/, e.g. assets/papers/fig-mypaper-2026.png)
+         2. the alt text (describe the figure)
+         3. venue + year in .paper-card__meta
+         4. the title + DOI links
+         5. the one-sentence summary in .paper-card__note
+       Keep ~6 cards here; move older ones to publications.html.              -->
+  <section class="section" id="recent-papers">
+    <div class="container">
+      <div class="section__head section__head--row">
+        <div>
+          <p class="eyebrow">Recent work</p>
+          <h2>Selected recent publications</h2>
+        </div>
+        <a class="section__more" href="publications.html">All publications →</a>
+      </div>
+
+      <div class="paper-grid">
+
+        <!-- Paper: Nature Communications 2026 — sponge-inspired metamaterials -->
+        <article class="paper-card reveal">
+          <a class="paper-card__figwrap" href="https://doi.org/10.1038/s41467-026-72612-4">
+            <!-- REPLACE with the paper's key figure -->
+            <img src="assets/papers/fig-sponge-2026.svg" alt="Key figure: deep-sea-sponge-inspired mechano-fluidic metamaterial lattice" loading="lazy">
+          </a>
+          <div class="paper-card__body">
+            <p class="paper-card__meta"><b>Nature Communications</b> · 2026</p>
+            <h3 class="paper-card__title">
+              <a href="https://doi.org/10.1038/s41467-026-72612-4">Metamaterials from the deep: optimized mechano-fluidic materials inspired by deep-sea sponges</a>
+            </h3>
+            <p class="paper-card__note">Glass-sponge skeletons inspire lattice metamaterials co-optimized for strength and internal flow. With the Grigoropoulos and Koumoutsakos groups.</p>
+            <p class="paper-card__doi"><a href="https://doi.org/10.1038/s41467-026-72612-4">doi:10.1038/s41467-026-72612-4</a></p>
+          </div>
+        </article>
+        <!-- Paper: JFM in press — turbulent boundary layer & free surface -->
+        <article class="paper-card reveal">
+          <a class="paper-card__figwrap" href="publications.html#journal">
+            <!-- REPLACE with the paper's key figure -->
+            <img src="assets/papers/fig-tbl-fs-2026.svg" alt="Key figure: turbulent boundary layer interacting with a free surface" loading="lazy">
+          </a>
+          <div class="paper-card__body">
+            <p class="paper-card__meta"><b>J. Fluid Mech.</b> · in press</p>
+            <h3 class="paper-card__title">
+              <a href="publications.html#journal">Interaction of a turbulent boundary layer with a free surface</a>
+            </h3>
+            <p class="paper-card__note">What happens when wall turbulence meets a deformable free surface — the canonical question underneath every air-layer application.</p>
+            <p class="paper-card__doi"><span class="pub-note">accepted — in press</span></p>
+          </div>
+        </article>
+        <!-- Paper: Measurement Science & Technology 2026 — event cameras -->
+        <article class="paper-card reveal">
+          <a class="paper-card__figwrap" href="https://doi.org/10.1088/1361-6501/ae70a4">
+            <!-- REPLACE with the paper's key figure -->
+            <img src="assets/papers/fig-eventcam-2026.svg" alt="Key figure: error quantification of event-camera frequency measurements" loading="lazy">
+          </a>
+          <div class="paper-card__body">
+            <p class="paper-card__meta"><b>Meas. Sci. Technol.</b> · 2026</p>
+            <h3 class="paper-card__title">
+              <a href="https://doi.org/10.1088/1361-6501/ae70a4">Error quantification of frequency-based measurements with event cameras</a>
+            </h3>
+            <p class="paper-card__note">When can you trust a neuromorphic camera's frequency readout? Systematic error bounds for event-based flow monitoring, from cavitation to vortex shedding.</p>
+            <p class="paper-card__doi"><a href="https://doi.org/10.1088/1361-6501/ae70a4">doi:10.1088/1361-6501/ae70a4</a></p>
+          </div>
+        </article>
+        <!-- Paper: Flow Measurement and Instrumentation 2026 — X-ray uncertainty -->
+        <article class="paper-card reveal">
+          <a class="paper-card__figwrap" href="https://doi.org/10.1016/j.flowmeasinst.2026.103420">
+            <!-- REPLACE with the paper's key figure -->
+            <img src="assets/papers/fig-xray-unc-2026.svg" alt="Key figure: added uncertainty in X-ray densitometry of unsteady flows" loading="lazy">
+          </a>
+          <div class="paper-card__body">
+            <p class="paper-card__meta"><b>Flow Meas. Instrum.</b> · 2026</p>
+            <h3 class="paper-card__title">
+              <a href="https://doi.org/10.1016/j.flowmeasinst.2026.103420">Added uncertainty in X-ray densitometry and CT due to time-varying material distribution</a>
+            </h3>
+            <p class="paper-card__note">Time-averaged X-ray measurements of unsteady flows carry a hidden bias — here is how large it is, and how to bound it.</p>
+            <p class="paper-card__doi"><a href="https://doi.org/10.1016/j.flowmeasinst.2026.103420">doi:10.1016/j.flowmeasinst.2026.103420</a></p>
+          </div>
+        </article>
+        <!-- Paper: IJMF 2026 — premature supercritical transition -->
+        <article class="paper-card reveal">
+          <a class="paper-card__figwrap" href="https://doi.org/10.1016/j.ijmultiphaseflow.2026.105606">
+            <!-- REPLACE with the paper's key figure -->
+            <img src="assets/papers/fig-bubbly-cyl-2026.svg" alt="Key figure: bubbly flow around a circular cylinder in the supercritical regime" loading="lazy">
+          </a>
+          <div class="paper-card__body">
+            <p class="paper-card__meta"><b>Int. J. Multiphase Flow</b> · 2026</p>
+            <h3 class="paper-card__title">
+              <a href="https://doi.org/10.1016/j.ijmultiphaseflow.2026.105606">Premature transition to supercritical flow with bubbly flow around a circular cylinder</a>
+            </h3>
+            <p class="paper-card__note">Injected bubbles push the cylinder wake into its supercritical regime well below the single-phase Reynolds number — with direct consequences for drag and shedding. With IRENav / École Navale.</p>
+            <p class="paper-card__doi"><a href="https://doi.org/10.1016/j.ijmultiphaseflow.2026.105606">doi:10.1016/j.ijmultiphaseflow.2026.105606</a></p>
+          </div>
+        </article>
+        <!-- Paper: Acta Astronautica 2026 — printing in microgravity -->
+        <article class="paper-card reveal">
+          <a class="paper-card__figwrap" href="https://doi.org/10.1016/j.actaastro.2026.05.027">
+            <!-- REPLACE with the paper's key figure -->
+            <img src="assets/papers/fig-vam-space-2026.svg" alt="Key figure: volumetric additive manufacturing aboard a sub-orbital flight" loading="lazy">
+          </a>
+          <div class="paper-card__body">
+            <p class="paper-card__meta"><b>Acta Astronautica</b> · 2026</p>
+            <h3 class="paper-card__title">
+              <a href="https://doi.org/10.1016/j.actaastro.2026.05.027">Demonstration and analysis of volumetric additive manufacturing via sub-orbital spaceflight testing</a>
+            </h3>
+            <p class="paper-card__note">Volumetric 3D printing demonstrated and analyzed aboard a sub-orbital flight — including the multiphase fluid dynamics of printing in microgravity.</p>
+            <p class="paper-card__doi"><a href="https://doi.org/10.1016/j.actaastro.2026.05.027">doi:10.1016/j.actaastro.2026.05.027</a></p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= RESEARCH AT A GLANCE -->
+  <section class="section section--tint">
+    <div class="container">
+      <div class="section__head">
+        <p class="eyebrow">What we work on</p>
+        <!-- HEADING alternatives, if you want a different register:
+             "Four themes, shared principles and tools"
+             "Four themes, common physics, shared instruments"
+             "Four themes, one way of working"                          -->
+        <h2>Four themes, shared principles and tools</h2>
+        <p style="margin:0.7rem 0 0; color:var(--slate); max-width:70ch;">
+          The themes differ; the way we work does not. We design, build and run our own
+          experiments; we pair the standard instruments of an experimental fluids lab with
+          ones that exist nowhere else, from custom X-ray systems to neuromorphic imaging;
+          and we work from first principles, so the physics — not the technique — sets the
+          direction. That is why the same group can take on ship drag and organ
+          cryopreservation.
+        </p>
+      </div>
+      <!-- These four tiles mirror the theme headings on research-areas.html.
+           Edit both together so the site tells one consistent story. -->
+      <div class="tile-grid">
+        <a class="tile reveal" href="research-areas.html#marine">
+          <span class="tile__kicker">Theme 01</span>
+          <h3>Decarbonizing marine transport</h3>
+          <p>Shipping moves ~80% of world trade and burns fuel mostly to overcome friction. We study the multiphase physics that could cut that bill.</p>
+          <ul class="tile__topics">
+            <li>Air lubrication</li>
+            <li>Superhydrophobic surfaces</li>
+            <li>Boundary layers &amp; free surfaces</li>
+          </ul>
+        </a>
+        <a class="tile reveal" href="research-areas.html#energy">
+          <span class="tile__kicker">Theme 02</span>
+          <h3>Multiphase flows in energy &amp; industrial systems</h3>
+          <p>Bubbles, cavities and phase change govern heat transfer, loading and noise in reactors, pumps, valves and propulsors.</p>
+          <ul class="tile__topics">
+            <li>Narrow-gap mixing (nuclear)</li>
+            <li>Bubble–vortex interaction</li>
+            <li>Cavitation</li>
+          </ul>
+        </a>
+        <a class="tile reveal" href="research-areas.html#health">
+          <span class="tile__kicker">Theme 03</span>
+          <h3>Phase change &amp; transport for health and environment</h3>
+          <p>The same nucleation and transport physics decides whether an organ survives freezing and where an airborne droplet lands.</p>
+          <ul class="tile__topics">
+            <li>Vitrification &amp; cryobiology</li>
+            <li>Droplet &amp; aerosol transport <span style="opacity:.6">(earlier work)</span></li>
+          </ul>
+        </a>
+        <a class="tile reveal" href="research-areas.html#measurement">
+          <span class="tile__kicker">Theme 04</span>
+          <h3>Measurement science: seeing the inaccessible</h3>
+          <p>Many flows that matter are opaque, fast, or sealed inside metal. We build the instruments that make them measurable — and those instruments now travel far beyond fluids.</p>
+          <ul class="tile__topics">
+            <li>X-ray imaging, CT &amp; velocimetry</li>
+            <li>Event-based cameras</li>
+          </ul>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= JOIN CALLOUT -->
+  <section class="section section--navy">
+    <div class="container callout">
+      <div>
+        <p class="eyebrow">Join us</p>
+        <h2>Curious, hands-on, and into fluids?</h2>
+        <p>We typically add 1–2 PhD students a year and welcome postdocs, visiting scholars, and Berkeley undergraduates through URAP.</p>
+      </div>
+      <a class="btn btn--gold" href="applying-to-join.html">How to join the lab</a>
+    </div>
+  </section>
+
+  <!-- ======================= SPONSORS
+       Logos hosted on flow.berkeley.edu are hotlinked; move them into assets/ when you deploy.
+       ONR and NNL are shown as text badges — drop logo files into assets/ and swap if preferred. -->
+  <section class="section">
+    <div class="container">
+      <p class="eyebrow">Sponsors</p>
+      <div class="sponsor-row">
+        <span class="sponsor-text">National Science Foundation</span>
+        <span class="sponsor-text">Office of Naval Research</span>
+        <span class="sponsor-text">Naval Nuclear Laboratory</span>
+        <img src="https://neup.inl.gov/SiteAssets/NEUP%20Logo-Gold.png" alt="DOE Nuclear Energy University Program" loading="lazy">
+        <img src="https://flow.berkeley.edu/wp-content/uploads/2019/12/PSC.png" alt="PSC" loading="lazy">
+        <img src="https://flow.berkeley.edu/wp-content/uploads/2020/05/Citris-1024x385.png" alt="CITRIS" loading="lazy">
+        <img src="https://flow.berkeley.edu/wp-content/uploads/2022/08/AIFS_logo.png" alt="AI Institute for Next Generation Food Systems" loading="lazy">
+        <img src="https://flow.berkeley.edu/wp-content/uploads/2022/08/Gryphon_logo.png" alt="Gryphon Scientific" loading="lazy">
+        <img src="https://flow.berkeley.edu/wp-content/uploads/2022/08/Hellman_logo.png" alt="Hellman Fellows Fund" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ======================= FOOTER (same on every page) -->
+<footer class="site-foot">
+  <div class="container site-foot__grid">
+    <div>
+      <a class="wordmark" href="index.html" aria-label="FLOW Lab home">
+        <span class="wordmark__flow">FLOW</span>
+        <span class="wordmark__sub">Lab · UC Berkeley</span>
+      </a>
+      <p style="margin-top:1rem; max-width:34ch; font-size:0.94rem;">
+        Experimental single- and multiphase fluid mechanics. Directed by
+        Associate Professor Simo A. Mäkiharju.
+      </p>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul>
+        <li>Etcheverry Hall</li>
+        <li>University of California, Berkeley</li>
+        <li><a href="mailto:makiharju@berkeley.edu">makiharju@berkeley.edu</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Links</h4>
+      <ul>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="applying-to-join.html">How to join</a></li>
+        <li><a href="https://www.youtube.com/@FLOWlab_fluids/featured">YouTube</a></li>
+        <li><a href="https://scholar.google.com/citations?user=E8e8-Z8AAAAJ">Google Scholar</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container site-foot__legal">
+    <span>© <span id="year">2026</span> FLOW Lab · University of California, Berkeley</span>
+    <span class="legal-sep" aria-hidden="true">·</span><a href="https://dap.berkeley.edu/get-help/report-web-accessibility-issue">Accessibility</a>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

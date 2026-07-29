@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" role="img" aria-label="Schematic of a turbulent boundary layer interacting with a deformable free surface, showing surface scars and upwellings">
+<title>Turbulent boundary layer interacting with a free surface</title>
+<defs>
+  <marker id="en" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#003262"/></marker>
+  <marker id="es" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2E7CB0"/></marker>
+</defs>
+<rect width="800" height="460" fill="#E9F0F5"/>
+
+<!-- Water body between the free surface and the wall -->
+<path d="M56,122 C130,120 200,124 260,122 C300,120 320,104 356,102 C392,100 410,120 450,124 C500,128 530,126 556,110 C580,96 600,104 640,116 C680,126 710,122 744,120 L744,400 L56,400 Z"
+      fill="#2E7CB0" opacity="0.07"/>
+<path d="M56,122 C130,120 200,124 260,122 C300,120 320,104 356,102 C392,100 410,120 450,124 C500,128 530,126 556,110 C580,96 600,104 640,116 C680,126 710,122 744,120"
+      fill="none" stroke="#2E7CB0" stroke-width="3"/>
+
+<g font-family="IBM Plex Mono, monospace" font-size="15" fill="#4C6379">
+  <text x="56" y="78" fill="#12263C">free surface (deformable)</text>
+
+  <!-- Upwellings and scars where eddies meet the surface -->
+  <g stroke="#DE9A00" stroke-width="2">
+    <line x1="356" y1="130" x2="356" y2="108" marker-end="url(#es)" stroke="#DE9A00"/>
+    <line x1="556" y1="138" x2="556" y2="116" marker-end="url(#es)" stroke="#DE9A00"/>
+  </g>
+  <text x="456" y="72" text-anchor="middle" font-size="13" fill="#12263C">surface scars &amp; upwellings</text>
+  <line x1="400" y1="78" x2="356" y2="98" stroke="#4C6379" stroke-width="1"/>
+  <line x1="512" y1="78" x2="556" y2="106" stroke="#4C6379" stroke-width="1"/>
+
+  <!-- Mean velocity profile -->
+  <g stroke="#003262" stroke-width="2.2">
+    <line x1="96" y1="392" x2="112" y2="392" marker-end="url(#en)"/>
+    <line x1="96" y1="366" x2="132" y2="366" marker-end="url(#en)"/>
+    <line x1="96" y1="340" x2="156" y2="340" marker-end="url(#en)"/>
+    <line x1="96" y1="310" x2="182" y2="310" marker-end="url(#en)"/>
+    <line x1="96" y1="276" x2="204" y2="276" marker-end="url(#en)"/>
+    <line x1="96" y1="238" x2="218" y2="238" marker-end="url(#en)"/>
+    <line x1="96" y1="196" x2="226" y2="196" marker-end="url(#en)"/>
+  </g>
+  <path d="M96,398 C150,372 196,318 214,258 C222,228 226,208 228,190" fill="none" stroke="#003262" stroke-width="1.6" stroke-dasharray="5 4"/>
+  <text x="240" y="196" font-size="14" fill="#12263C">U∞</text>
+
+  <!-- Boundary layer thickness -->
+  <line x1="76" y1="400" x2="76" y2="196" stroke="#4C6379" stroke-width="1.4" marker-start="url(#en)" marker-end="url(#en)"/>
+  <text x="64" y="302" text-anchor="end" font-size="15" fill="#12263C">δ</text>
+
+  <!-- Turbulent structures, the largest reaching the surface -->
+  <g fill="none" stroke="#2E7CB0" stroke-width="2">
+    <path d="M312,350 a22,22 0 1,1 -16,7" marker-end="url(#es)"/>
+    <path d="M418,296 a26,26 0 1,0 -18,-9" marker-end="url(#es)"/>
+    <path d="M356,186 a30,30 0 1,1 -21,10" marker-end="url(#es)"/>
+    <path d="M540,330 a24,24 0 1,0 -17,-8" marker-end="url(#es)"/>
+    <path d="M556,196 a28,28 0 1,1 -20,9" marker-end="url(#es)"/>
+    <path d="M660,300 a22,22 0 1,1 -16,7" marker-end="url(#es)"/>
+  </g>
+  <text x="700" y="360" text-anchor="end" font-size="13">turbulent eddies</text>
+
+  <!-- Wall -->
+  <line x1="56" y1="400" x2="744" y2="400" stroke="#003262" stroke-width="3"/>
+  <g stroke="#003262" stroke-width="1.4" opacity="0.65">
+    <line x1="66" y1="400" x2="52" y2="416"/><line x1="106" y1="400" x2="92" y2="416"/>
+    <line x1="146" y1="400" x2="132" y2="416"/><line x1="186" y1="400" x2="172" y2="416"/>
+    <line x1="226" y1="400" x2="212" y2="416"/><line x1="266" y1="400" x2="252" y2="416"/>
+    <line x1="306" y1="400" x2="292" y2="416"/><line x1="346" y1="400" x2="332" y2="416"/>
+    <line x1="386" y1="400" x2="372" y2="416"/><line x1="426" y1="400" x2="412" y2="416"/>
+    <line x1="466" y1="400" x2="452" y2="416"/><line x1="506" y1="400" x2="492" y2="416"/>
+    <line x1="546" y1="400" x2="532" y2="416"/><line x1="586" y1="400" x2="572" y2="416"/>
+    <line x1="626" y1="400" x2="612" y2="416"/><line x1="666" y1="400" x2="652" y2="416"/>
+    <line x1="706" y1="400" x2="692" y2="416"/><line x1="744" y1="400" x2="730" y2="416"/>
+  </g>
+  <text x="744" y="440" text-anchor="end" font-size="13">no-slip wall</text>
+</g>
+</svg>
